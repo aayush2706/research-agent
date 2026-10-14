@@ -7,10 +7,10 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-llm = ChatMistralAI(
-    model="mistral-small-latest",
-    temperature=0
-    )
+llm = ChatGroq(
+    model="openai/gpt-oss-20b",
+    temperature=0,
+)
 
 #1st agent for web search and scraping
 
